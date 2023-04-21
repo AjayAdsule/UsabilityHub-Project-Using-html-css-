@@ -1,0 +1,3 @@
+first we made a container in that we give max-width 1180px and give margin-inline as auto 
+The container class will give all html element because we want website in one line 
+Then create flex class which we will use in any section and give property as element require

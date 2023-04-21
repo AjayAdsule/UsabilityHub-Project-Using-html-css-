@@ -1,0 +1,227 @@
+/* import fonts from google fonts */
+/* utility classes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* declare variable for fonts color padding  */
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d96a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'poppins','sans-serif';
+    color: var(--primary-text-color);
+}
+/* increase font size of fonts */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto','sans-serif';
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+}
+/* we create a utility class in which we define display flex and give item in center if we need any html element give display flex we use this class */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.3s ease-out;
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 600;
+    color: white !important;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.1px solid var(--primary-text-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color)  !important;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    color: var(--accent-color-dark) !important;
+}
+
+
+/* the banner class assign to section in that bg image,size,bg-color */
+.banner{
+    border: 2px solid red;
+    background-color: #e74694;
+    background-image: url('https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b7e4d7973addf81ed1f4010_pattern.png');
+    background-size: 300px;
+}
+/* container gives max-width 1180px and gives margin and padding as inline  */
+.container{
+    max-width: 1180px;
+    border: 2px solid green;
+    margin-inline:auto ;
+    padding-inline: var(--padding-inline-section);
+    
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding: 10px 30px;
+    
+}
+/* this is navbar part */
+.main-nav{
+    justify-content: space-between;
+    margin-top: 10px ;
+}
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 30px;
+}
+
+nav-links{
+    flex-basis: 737px;
+}
+
+/* header part */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.header-section{
+    justify-content: center;
+   gap: 50px;
+}
+.header-right img{
+    width: 600px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left-heading{
+    margin-top: 10px;
+}
+.header-left-text{
+    margin-top: 20px;
+}
+.header-left-button{
+    margin-top: 30px;
+}
+
+/* this is compoany section */
+.info p{
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+.company-section{
+    padding: 40px 20px;
+}
+.company-multiple-logo{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.multiple-logos img{
+        /* width: 50px; */
+        max-height: 46px;
+}
+
+/* this is feature section */
+.feature-header{
+    text-align: center;
+    
+}
+.feature-header-heading{
+    margin-bottom: 10px;
+}
+.feature-area{
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
+}
+.feature-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    justify-content: space-between;
+}
+.feature-card p{
+    font-size: 20px;
+    color: #577592;
+    text-align: center;
+}
+
+
+/* this is designer section */
+.designer{
+    padding: 40px 20px;
+}
+.designer-left img{
+    max-width: 479px;
+}
+.designer-main{
+    gap: 60px;
+}
+
+.testinomal-image img{
+    max-width: 100px;
+}
+.testinomal-text{
+    background-image: url('https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5af9a44aa9b84e59b0b95121_quote.svg');
+    background-repeat: no-repeat;
+}
+.designer-text-p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #183b56;
+    font-family: Averta PE,sans-serif;
+}
+.designer-text h3{
+    color: #183b56 !important;
+    font-size: 32px;
+    margin-top: 5px;
+}
+.designer-text p{
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+.testinomal-person{
+    margin-top: 20px;
+    gap: 20px;
+}
