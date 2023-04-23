@@ -90,7 +90,7 @@ ul{
 /* container gives max-width 1180px and gives margin and padding as inline  */
 .container{
     max-width: 1180px;
-    /* border: 2px solid green; */
+    border: 2px solid green;
     margin-inline:auto ;
     padding-inline: var(--padding-inline-section);
     
@@ -299,4 +299,33 @@ header{
 }
 .feature-summary-2-right{
     padding-right: 20px;
+}
+/* this is platform section */
+.platform-header{
+    flex-direction: column;
+    
+}
+.platform-header h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.platform-cards{
+   
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+    justify-items: flex-end;
+    
+      
+}
+.platford-card{
+    gap: 25px;
+    margin-top: 25px;
+    /* justify-content: space-between; */
+}
+.card1{
+    background-image: url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b48591a238eb6563b4d3581_cover_tasks.jpg');
+}
+.card2{
+    background-image: url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b48581f238eb652d84d356f_cover_navigate.jpg');
 }
