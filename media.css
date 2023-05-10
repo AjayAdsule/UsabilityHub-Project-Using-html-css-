@@ -9,4 +9,12 @@
     .example-card{
         width:10%
     }
+
+    /* this is company section */
+    .multiple-logos img{
+        max-width: 80px;
+    }
+    .info p{
+        font-size: 12px;
+    }
 }
