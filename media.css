@@ -17,4 +17,17 @@
     .info p{
         font-size: 12px;
     }
+
+    /* feature section */
+    .feature-card{
+        max-width: 29%;;
+    }
+}
+
+@media (min-width:320px){
+    .header-section{
+        .header-right img{
+            width: 400px;
+        }
+    }
 }
